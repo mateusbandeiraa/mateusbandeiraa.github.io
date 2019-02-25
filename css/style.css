@@ -15,6 +15,10 @@ Paleta de cores:
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fffffa;
     margin: 0;
