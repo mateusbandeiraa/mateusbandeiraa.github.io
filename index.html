@@ -10,15 +10,73 @@
 </head>
 
 <body>
-    <div id="hero">
-        <div id="container">
+    <section id="hero">
+        <div class="wrapper">
             <div id="saudacao">
                 Olá, meu nome é <span class="highlight">Mateus Bandeira</span>.
             </div>
-            <div id="subtexto"><div>
-                Eu faço programas de computador. Alguns deles até funcionam.
+            <div id="subtexto">
+                <div>
+                    Eu faço programas de computador. Alguns deles até funcionam.
+                </div>
             </div>
+            <a href="#" class="botao primary">Veja meus projetos</a>
         </div>
+    </section>
+    <div class="container">
+        <section id="projetos">
+            <div class="tituloSection">
+                <h2>Projetos</h2>
+            </div>
+            <p>De vez em quando, as minhas ideias acabam virando um repositório no Github. Muitas coisas são antigas e
+                algumas não funcionam mais. Tomara que nenhuma delas se volte contra mim como uma série de tweets
+                polêmicos que uma celebridade postou a 10 anos atrás.</p>
+            <article class="projeto" id="jogoTrivia">
+                <h3>QuestOne <span class="anoProjeto">2018</span></h3>
+                <span class="indicadorStatus">Finalizado</span>
+                <div class="wrapper">
+                    <p>O projeto de codinome <span class="highlight">JogoTrivia</span> foi um
+                        trabalho para a faculdade desenvolvido em equipe, junto com <span class="nowrap">Roberto
+                            Barbosa</span> e <span class="nowrap">Rafael Mota</span>. O
+                        QuestOne é um jogo de perguntas e respostas multiplayer online. As perguntas aparecem em tempo
+                        real
+                        para todos os jogadores e os pontos são distribuídos de acordo com a velocidade que a resposta
+                        correta é selecionada.
+                    </p>
+
+                    <figure role="group" id="imgJogoTrivia">
+                        <figure class="xlimg"><img src="assets/jogotrivia-seleção-de-partida.png"
+                                alt="Tela de seleção de partida"></figure>
+                        <figure><img src="assets/jogotrivia-questao.png"
+                                alt="Tela de questão. 'Qual é o elemento químico de número atômico 42? Opções: Carbono; Neon; Molibdênio; Tório.">
+                        </figure>
+                        <figure class="xlimg"><img src="assets/jogotrivia-usou-ajuda.png"
+                                alt="Tela de questão. As opções Carbono e Tório estão apagadas, pois o jogador usou a ajuda.">
+                        </figure>
+                        <figure class="limg"><img src="assets/jogotrivia-resposta-certa.png"
+                                alt="Tela de questão. A opção correta é Molibdênio."></figure>
+                        <figure><img src="assets/jogotrivia-top10.png"
+                                alt="Top 10 com a pontuação dos jogadores após o fim do jogo."></figure>
+                    </figure>
+                </div>
+                <p>A API do jogo foi desenvolvida em Java, e o cliente é uma página web que se comunica com o servidor
+                    via AJAX.
+                    <ul>
+                        <li><a href="https://github.com/mateusbandeiraa/JogoTrivia-API" target="blank">Repositório da API</a></li>
+                        <li><a href="https://github.com/mateusbandeiraa/JogoTrivia-SERVER" target="blank">Repositório do servidor e
+                                cliente web</a></li>
+                    </ul>
+                </p>
+            </article>
+            <!-- <article class="projeto" id="projecteulersolutions">
+                <h3>Project Euler Solutions <span class="anoProjeto">2018–Presente</span></h3>
+                <p>Lorem ipsum</p>
+            </article>
+            <article class="projeto" id="hue">
+                <h3>Hue</h3>
+                <p>Lorem ipsum</p>
+            </article> -->
+        </section>
     </div>
 </body>
 

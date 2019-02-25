@@ -9,19 +9,21 @@ Paleta de cores:
 #E7ECEF GLITTER
 */
 
-@import url('https://fonts.googleapis.com/css?family=Exo+2:200, 300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:200, 300,400, 700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: #272932;
-    color: #fffffa;
+    background-color: #fffffa;
     margin: 0;
     font-family: 'Exo 2', sans-serif;
 }
 
 #hero {
+    background-color: #031926;
+    color: #FFFFFA;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -30,8 +32,9 @@ body {
     padding: 20pt;
 }
 
-#container {
-    display: inline-block;
+#hero>.wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 #saudacao {
@@ -44,19 +47,207 @@ body {
     font-weight: 200;
 }
 
+.container {
+    width: auto;
+    margin: 10px 15px;
+}
+
+.tituloSection {
+    display: block;
+}
+
+.tituloSection::after {
+    content: "";
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../assets/borda-quadrada.svg');
+    border-width: 0;
+    height: 4px;
+    display: block;
+}
+
+.tituloSection>h2 {
+    font-size: 25pt;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5pt;
+}
+
+article.projeto>h3:first-child {
+    font-weight: 700;
+    margin-bottom: 2pt;
+}
+
+.anoProjeto {
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.anoProjeto::before {
+    content: "(";
+}
+
+.anoProjeto::after {
+    content: ")";
+}
+
+.indicadorStatus {
+    font-family: 'Roboto Slab', serif;
+}
+
+.indicadorStatus::before {
+    content: "Status: "
+}
+
+#jogoTrivia>div.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#jogoTrivia>div.wrapper>p:first-of-type {
+    order: 1;
+}
+
+#jogoTrivia>div.wrapper>#imgJogoTrivia {
+    order: 2;
+}
+
+article figure[role=group] {
+    display: flex;
+    margin: 0;
+}
+
+article figure[role=group]>figure {
+    margin: 2pt;
+}
+
+article figure[role=group]>figure>img {
+    width: 100%;
+}
+
+article figure[role=group]>figure::after {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 12px;
+    background: black;
+    border-radius: 100%;
+    filter: blur(5px);
+    content: "";
+    position: relative;
+    bottom: 12px;
+}
+
+.xlimg,
+.limg {
+    display: none;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    text-indent: 15pt;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: square;
+    color: #F05D5E;
+    line-height: 24pt;
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #468189;
+    box-shadow: 0 6pt 0pt -3pt #468189;
+}
+
+a:hover{
+    color: #6f8695;
+    box-shadow: 0 6pt 0pt -3pt #6f8695;
+}
+
+a:active{
+    color: #031926;
+    box-shadow: 0 6pt 0pt -3pt #031926;
+}
+
+
+a:visited {
+    color: #0d5c63;
+    box-shadow: 0 6pt 0pt -3pt #0d5c63;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #031926;
+}
+
 .highlight {
     color: #F05D5E;
     font-weight: 700;
     white-space: nowrap;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
+.botao {
+    font-size: 16pt;
+    border: solid 1px;
+    border-radius: 15pt;
+    padding: 5px 15px;
+    margin: 10px auto;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+
+.botao.primary {
+    color: #fffffa;
+}
+
+.botao.primary:hover {
+    background-color: rgba(255, 255, 250, 0.1);
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    #saudacao {
+        font-size: 30pt;
+        line-height: 30pt;
+    }
+    #subtexto {
+        font-size: 18pt;
+    }
+    #jogoTrivia>div.wrapper {
+        flex-direction: initial;
+    }
+    .limg {
+        display: initial;
+    }
+    #jogoTrivia>div.wrapper>p:first-of-type {
+        order: 1;
+        width: 150%;
+        margin-right: 15px;
+    }
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 895px and up) */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 895px) {
     #saudacao {
         font-size: 40pt;
         line-height: 40pt;
@@ -64,11 +255,25 @@ body {
     #subtexto {
         font-size: 18pt;
     }
+    .container {
+        width: 870px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .xlimg {
+        display: initial;
+    }
+    #jogoTrivia>div.wrapper {
+        flex-direction: column;
+    }
+    #jogoTrivia>div.wrapper>#imgJogoTrivia {
+        order: 2;
+    }
+    #jogoTrivia>div.wrapper>p:first-of-type {
+        width: initial;
+        margin-right: initial;
+    }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
