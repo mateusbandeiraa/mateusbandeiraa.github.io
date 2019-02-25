@@ -1,0 +1,75 @@
+/*
+Paleta de cores:
+#0D5C63 DEEP GREEN-CYAN TURQUOISE
+#468189 TEAL BLUE
+#6F8695 SLATE GREY
+#031926 MASTRICHT BLUE
+#FFFFFA BABY POWDER
+#F05D5E SUNSET ORANGE
+#E7ECEF GLITTER
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:200, 300,400,700');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272932;
+    color: #fffffa;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20pt;
+}
+
+#container {
+    display: inline-block;
+}
+
+#saudacao {
+    font-size: 25pt;
+    line-height: 25pt;
+    font-weight: 300;
+}
+
+#subtexto {
+    font-weight: 200;
+}
+
+.highlight {
+    color: #F05D5E;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    #saudacao {
+        font-size: 40pt;
+        line-height: 40pt;
+    }
+    #subtexto {
+        font-size: 18pt;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
