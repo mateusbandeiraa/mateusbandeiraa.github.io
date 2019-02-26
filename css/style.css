@@ -71,6 +71,10 @@ body {
     display: block;
 }
 
+.tituloSection::after>#quadradoBorda {
+    fill: #F05D5E;
+}
+
 .tituloSection>h2 {
     font-size: 25pt;
     text-align: center;
@@ -78,10 +82,18 @@ body {
     margin-bottom: 5pt;
 }
 
-article.projeto>h3:first-child {
-    font-weight: 700;
-    margin-bottom: 2pt;
+article+article>h3:first-of-type::before {
+    content: "";
+    width: 128px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background: url('../assets/borda-quadrada-azul.svg');
+    border-width: 0;
+    height: 4px;
+    display: block;
 }
+
 
 .anoProjeto {
     white-space: nowrap;
@@ -118,6 +130,11 @@ article.projeto>h3:first-child {
     order: 2;
 }
 
+article section {
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
 article figure[role=group] {
     display: flex;
     margin: 0;
@@ -150,6 +167,25 @@ article figure[role=group]>figure::after {
     display: none;
 }
 
+ul.linksProblemas {
+    padding-left: 15pt;
+}
+
+ul.linksProblemas>li::before {
+    display: none;
+}
+
+ul.linksProblemas>li+li::before {
+    content: "|";
+    margin: initial 5pt;
+    display: inline;
+    color: #0d5c63;
+}
+
+ul.linksProblemas>li {
+    display: inline-block;
+}
+
 p {
     font-family: 'Roboto Slab', serif;
     text-indent: 15pt;
@@ -162,7 +198,7 @@ ul {
     font-size: 14pt;
 }
 
-ul li::before{
+ul li::before {
     content: "\25A0";
     color: #F05D5E;
     margin: .75em;
@@ -201,11 +237,24 @@ h4,
 h5,
 h6 {
     color: #031926;
+    margin-bottom: 2pt !important;
+}
+
+h4,
+h5 {
+    font-size: 12.5pt;
+    margin-top: 5pt;
+}
+
+blockquote {
+    margin-top: 5pt;
+    margin-bottom: 5pt;
 }
 
 .highlight {
     color: #F05D5E;
     font-weight: 700;
+    font-family: "Exo 2", sans-serif;
     white-space: nowrap;
 }
 
