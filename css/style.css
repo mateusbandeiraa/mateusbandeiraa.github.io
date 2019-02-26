@@ -217,6 +217,7 @@ h6 {
     text-decoration: none;
     transition: background-color .2s;
     box-shadow: none !important;
+    cursor: pointer;
 }
 
 .botao.primary {
