@@ -15,7 +15,7 @@ Paleta de cores:
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -157,10 +157,15 @@ p {
 }
 
 ul {
-    list-style-type: square;
-    color: #F05D5E;
+    list-style-type: none;
     line-height: 24pt;
     font-size: 14pt;
+}
+
+ul li::before{
+    content: "\25A0";
+    color: #F05D5E;
+    margin: .75em;
 }
 
 a {
@@ -174,16 +179,15 @@ a:link {
     box-shadow: 0 6pt 0pt -3pt #468189;
 }
 
-a:hover{
+a:hover {
     color: #6f8695;
     box-shadow: 0 6pt 0pt -3pt #6f8695;
 }
 
-a:active{
+a:active {
     color: #031926;
     box-shadow: 0 6pt 0pt -3pt #031926;
 }
-
 
 a:visited {
     color: #0d5c63;
