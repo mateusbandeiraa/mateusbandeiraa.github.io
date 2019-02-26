@@ -165,6 +165,8 @@ ul {
 
 a {
     text-decoration: none;
+    line-height: 17pt;
+    font-weight: 700;
 }
 
 a:link {
