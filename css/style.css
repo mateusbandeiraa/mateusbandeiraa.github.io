@@ -96,10 +96,6 @@ body {
     display: block;
 }
 
-.tituloSection::after>#quadradoBorda {
-    fill: #F05D5E;
-}
-
 .tituloSection>h2 {
     font-size: 25pt;
     text-align: center;
@@ -107,7 +103,9 @@ body {
     margin-bottom: 5pt;
 }
 
-article+article>h3:first-of-type::before {
+/* Artigos */
+
+/* article+article>h3:first-of-type::before {
     content: "";
     width: 128px;
     margin-left: auto;
@@ -117,12 +115,14 @@ article+article>h3:first-of-type::before {
     border-width: 0;
     height: 4px;
     display: block;
-}
+} */
 
 .anoProjeto {
     white-space: nowrap;
     font-weight: 400;
     font-size: 12pt;
+    margin-left: 5pt;
+    margin-left: 5pt;
 }
 
 .anoProjeto::before {
@@ -133,46 +133,56 @@ article+article>h3:first-of-type::before {
     content: ")";
 }
 
-.indicadorStatus {
+/* Artigos */
+/* .indicadorStatus {
     font-family: 'Roboto Slab', serif;
-}
+} */
 
-.indicadorStatus::before {
+/* Artigos */
+/* .indicadorStatus::before {
     content: "Status: "
-}
+} */
 
-#jogoTrivia>div.wrapper {
+/* Artigos - JogoTrivia*/
+/* #jogoTrivia>div.wrapper {
     display: flex;
     flex-direction: column;
-}
+} */
 
-#jogoTrivia>div.wrapper>p:first-of-type {
+/* Artigos - JogoTrivia*/
+/* #jogoTrivia>div.wrapper>p:first-of-type {
     order: 1;
-}
+} */
 
-#jogoTrivia>div.wrapper>#imgJogoTrivia {
+/* Artigos - JogoTrivia*/
+/* #jogoTrivia>div.wrapper>#imgJogoTrivia {
     order: 2;
-}
+} */
 
-article section {
+/* Artigos */
+/* article section {
     margin-left: 10pt;
     margin-right: 10pt;
-}
+} */
 
-article figure[role=group] {
+/* Artigos */
+/* article figure[role=group] {
     display: flex;
     margin: 0;
-}
+} */
 
-article figure[role=group]>figure {
+/* Artigos */
+/* article figure[role=group]>figure {
     margin: 2pt;
-}
+} */
 
-article figure[role=group]>figure>img {
+/* Artigos */
+/* article figure[role=group]>figure>img {
     width: 100%;
-}
+} */
 
-article figure[role=group]>figure::after {
+/* Artigos - JogoTrivia*/
+/* article figure[role=group]>figure::after {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -184,31 +194,34 @@ article figure[role=group]>figure::after {
     content: "";
     position: relative;
     bottom: 12px;
-}
+} */
 
-.xlimg,
+/* Artigos - JogoTrivia*/
+/* .xlimg,
 .limg {
     display: none;
-}
+} */
 
-ul.linksProblemas {
+/* Artigos - euler */
+/* ul.linksProblemas {
     padding-left: 15pt;
-}
+} */
 
-ul.linksProblemas>li::before {
+/* Artigos - euler */
+/* ul.linksProblemas>li::before {
     display: none;
-}
-
-ul.linksProblemas>li+li::before {
+} */
+/* Artigos - euler */
+/* ul.linksProblemas>li+li::before {
     content: "|";
     margin: initial 5pt;
     display: inline;
     color: #0d5c63;
-}
-
-ul.linksProblemas>li {
+} */
+/* Artigos - euler */
+/* ul.linksProblemas>li {
     display: inline-block;
-}
+} */
 
 p {
     font-family: 'Roboto Slab', serif;
@@ -264,16 +277,18 @@ h6 {
     margin-bottom: 2pt !important;
 }
 
-h4,
+/* Artigos */
+/* h4,
 h5 {
     font-size: 12.5pt;
     margin-top: 5pt;
-}
+} */
 
-blockquote {
+/* Artigos */
+/* blockquote {
     margin-top: 5pt;
     margin-bottom: 5pt;
-}
+} */
 
 .highlight {
     color: #F05D5E;
@@ -286,25 +301,20 @@ blockquote {
     white-space: nowrap;
 }
 
-.botao {
-    font-size: 16pt;
-    border: solid 1px;
-    border-radius: 15pt;
-    padding: 5px 15px;
-    margin: 10px auto;
-    display: inline-block;
-    text-decoration: none;
-    transition: background-color .2s;
-    box-shadow: none !important;
+.botao{
+    border: 1px solid #FFFFFA;
+    color: #FFFFFA;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 10pt;
+    padding: 8pt;
     cursor: pointer;
+    transition: all .2s;
 }
 
-.botao.primary {
-    color: #fffffa;
-}
-
-.botao.primary:hover {
-    background-color: rgba(255, 255, 250, 0.1);
+.botao:hover{
+    background-color: #FFFFFA;
+    color: #F05D5E;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -317,17 +327,21 @@ blockquote {
     #subtexto {
         font-size: 18pt;
     }
-    #jogoTrivia>div.wrapper {
+
+    /* Artigos - JogoTrivia*/
+    /* #jogoTrivia>div.wrapper {
         flex-direction: initial;
-    }
-    .limg {
+    } */
+    /* Artigos - JogoTrivia*/
+    /* .limg {
         display: initial;
-    }
-    #jogoTrivia>div.wrapper>p:first-of-type {
+    } */
+    /* Artigos - JogoTrivia*/
+    /* #jogoTrivia>div.wrapper>p:first-of-type {
         order: 1;
         width: 150%;
         margin-right: 15px;
-    }
+    } */
 }
 
 /* Medium devices (landscape tablets, 895px and up) */
@@ -345,19 +359,24 @@ blockquote {
         margin-left: auto;
         margin-right: auto;
     }
-    .xlimg {
+
+    /* Artigos - JogoTrivia*/
+    /* .xlimg {
         display: initial;
-    }
-    #jogoTrivia>div.wrapper {
+    } */
+    /* Artigos - JogoTrivia*/
+    /* #jogoTrivia>div.wrapper {
         flex-direction: column;
-    }
-    #jogoTrivia>div.wrapper>#imgJogoTrivia {
+    } */
+    /* Artigos - JogoTrivia*/
+    /* #jogoTrivia>div.wrapper>#imgJogoTrivia {
         order: 2;
-    }
-    #jogoTrivia>div.wrapper>p:first-of-type {
+    } */
+    /* Artigos - JogoTrivia*/
+    /* #jogoTrivia>div.wrapper>p:first-of-type {
         width: initial;
         margin-right: initial;
-    }
+    } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
