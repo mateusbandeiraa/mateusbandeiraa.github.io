@@ -50,7 +50,6 @@ body {
 #hero>.wrapper {
     display: flex;
     flex-direction: column;
-    width: 70%
 }
 
 #saudacao {
