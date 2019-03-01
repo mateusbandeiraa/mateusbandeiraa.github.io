@@ -31,6 +31,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20pt;
@@ -50,7 +51,7 @@ body {
 #hero>.wrapper {
     display: flex;
     flex-direction: column;
-    min-width: 275px;;
+    min-width: 275px;
 }
 
 #saudacao {
@@ -75,6 +76,17 @@ body {
 #subtexto li>i.fab,
 #subtexto li>i.fas {
     margin-right: 5pt;
+}
+
+#setaDescer {
+    position: absolute;
+    bottom: 0;
+    margin: 15px auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 18pt;
+    box-shadow: none !important;
+    cursor: pointer;
 }
 
 .container {

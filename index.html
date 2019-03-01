@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/smoothscroll.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.querySelector("#setaDescer").onclick = function () {
+                document.querySelector("#projetos").scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -41,6 +48,7 @@
                 </ul>
             </div>
         </div>
+        <a id="setaDescer"><i class="fas fa-lg fa-chevron-down"></i></a>
     </section>
     <div class="container">
         <section id="projetos">
