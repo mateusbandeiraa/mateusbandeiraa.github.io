@@ -50,6 +50,7 @@ body {
 #hero>.wrapper {
     display: flex;
     flex-direction: column;
+    min-width: 275px;;
 }
 
 #saudacao {
@@ -134,54 +135,64 @@ body {
 }
 
 /* Artigos */
+
 /* .indicadorStatus {
     font-family: 'Roboto Slab', serif;
 } */
 
 /* Artigos */
+
 /* .indicadorStatus::before {
     content: "Status: "
 } */
 
 /* Artigos - JogoTrivia*/
+
 /* #jogoTrivia>div.wrapper {
     display: flex;
     flex-direction: column;
 } */
 
 /* Artigos - JogoTrivia*/
+
 /* #jogoTrivia>div.wrapper>p:first-of-type {
     order: 1;
 } */
 
 /* Artigos - JogoTrivia*/
+
 /* #jogoTrivia>div.wrapper>#imgJogoTrivia {
     order: 2;
 } */
 
 /* Artigos */
+
 /* article section {
     margin-left: 10pt;
     margin-right: 10pt;
 } */
 
 /* Artigos */
+
 /* article figure[role=group] {
     display: flex;
     margin: 0;
 } */
 
 /* Artigos */
+
 /* article figure[role=group]>figure {
     margin: 2pt;
 } */
 
 /* Artigos */
+
 /* article figure[role=group]>figure>img {
     width: 100%;
 } */
 
 /* Artigos - JogoTrivia*/
+
 /* article figure[role=group]>figure::after {
     display: block;
     margin-left: auto;
@@ -197,28 +208,35 @@ body {
 } */
 
 /* Artigos - JogoTrivia*/
+
 /* .xlimg,
 .limg {
     display: none;
 } */
 
 /* Artigos - euler */
+
 /* ul.linksProblemas {
     padding-left: 15pt;
 } */
 
 /* Artigos - euler */
+
 /* ul.linksProblemas>li::before {
     display: none;
 } */
+
 /* Artigos - euler */
+
 /* ul.linksProblemas>li+li::before {
     content: "|";
     margin: initial 5pt;
     display: inline;
     color: #0d5c63;
 } */
+
 /* Artigos - euler */
+
 /* ul.linksProblemas>li {
     display: inline-block;
 } */
@@ -278,6 +296,7 @@ h6 {
 }
 
 /* Artigos */
+
 /* h4,
 h5 {
     font-size: 12.5pt;
@@ -285,6 +304,7 @@ h5 {
 } */
 
 /* Artigos */
+
 /* blockquote {
     margin-top: 5pt;
     margin-bottom: 5pt;
@@ -301,7 +321,7 @@ h5 {
     white-space: nowrap;
 }
 
-.botao{
+.botao {
     border: 1px solid #FFFFFA;
     color: #FFFFFA;
     border-radius: 10px;
@@ -312,7 +332,7 @@ h5 {
     transition: all .2s;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: #FFFFFA;
     color: #F05D5E;
 }
@@ -327,7 +347,6 @@ h5 {
     #subtexto {
         font-size: 18pt;
     }
-
     /* Artigos - JogoTrivia*/
     /* #jogoTrivia>div.wrapper {
         flex-direction: initial;
@@ -359,7 +378,6 @@ h5 {
         margin-left: auto;
         margin-right: auto;
     }
-
     /* Artigos - JogoTrivia*/
     /* .xlimg {
         display: initial;
