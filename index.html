@@ -20,6 +20,7 @@
     <title>Mateus Bandeira</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/smoothscroll.js"></script>
+    <script src="js/moment.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -43,6 +44,31 @@
         </div>
     </section>
     <div class="container">
+        <section id="sobre">
+            <div class="tituloSection">
+                <h2>Sobre</h2>
+            </div>
+            <p>
+                Me interesso por todo tipo de tecnologia desde criança. Aos 11 anos comecei a programar e não parei
+                desde então. Hoje tenho <span id="idade">19</span> anos e estou cursando <span
+                    class="highlight">Sistemas de
+                    Informação</span> na Universidade Federal do Estado do Rio de Janeiro, a UNIRIO.
+            </p>
+            <p>
+                A partir de 2014, quando decidi que iria seguir a carreira de desenvolvedor, comecei a estudar Java e
+                fiz alguns cursos voltados para desenvolvimento web. Desde então, venho explorando novas linguagens e
+                tecnologias. Entre 2017 e 2018, tive a experiência de trabalhar numa empresa como programador PHP. A
+                aprovação no vestibular e o início do ensino superior, porém, não permitiu que durasse mais tempo.
+            </p>
+            <p>
+                Além de estudar, uso meu tempo para criar pequenos projetos e tirar algumas ideias do papel. Ainda são
+                poucos, mas eu tenho muito tempo pela frente.
+            </p>
+            <script>
+                let idade = moment().diff("1999-12-28", "years");
+                document.querySelector("#idade").innerHTML = idade;
+            </script>
+        </section>
         <section id="projetos">
             <div class="tituloSection">
                 <h2>Projetos</h2>
