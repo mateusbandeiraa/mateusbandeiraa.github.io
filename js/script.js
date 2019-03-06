@@ -1,4 +1,4 @@
-const ambiente = /mateusbandeira\.dev/.test(document.location.hostmane) ? "prod" : "dev";
+const ambiente = /mateusbandeira\.dev/.test(document.location.hostname) ? "prod" : "dev";
 if (ambiente == "dev") {
     import("/js/live.js").then((livejs) => { livejs.default() }); // Atualiza a página automaticamente se houver mudanças no HTML, CSS ou JS.
 } else { // prod
