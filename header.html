@@ -29,14 +29,6 @@
         top: 0;
     }
 
-    #nomeSuperior {
-        color: #F05D5E;
-        font-weight: 700;
-        font-family: "Exo 2", sans-serif;
-        white-space: nowrap;
-        font-size: 15pt;
-    }
-
     #barraSuperior a,
     #barraSuperior a:link,
     #barraSuperior a:visited,
@@ -48,6 +40,19 @@
     #barraSuperior a:hover {
         color: #F05D5E;
         box-shadow: 0 6pt 0pt -3pt #F05D5E;
+    }
+
+    #nomeSuperior,
+    #nomeSuperior a,
+    #nomeSuperior a:link,
+    #nomeSuperior a:visited,
+    #nomeSuperior a:active,
+    #nomeSuperior a:hover {
+        color: #F05D5E;
+        font-weight: 700;
+        font-family: "Exo 2", sans-serif;
+        white-space: nowrap;
+        box-shadow: none;
     }
 
     #barraSuperior.ativo .botao {
@@ -145,7 +150,7 @@
     }
 </style>
 <div class="container">
-    <div id="nomeSuperior">Mateus Bandeira</div>
+    <div id="nomeSuperior"><a href="../index.html">Mateus Bandeira</a></div>
     <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
