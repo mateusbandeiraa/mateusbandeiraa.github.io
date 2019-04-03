@@ -4,7 +4,7 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135366133-1"></script>
-    
+
     <style>
     </style>
 
@@ -16,10 +16,25 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <script src="js/smoothscroll.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </head>
 
 <body>
+    <div id="barraSuperior"></div>
+    <script>
+        $("#barraSuperior").load("../header.html")
+    </script>
+    <style>
+        #nomeSuperior {
+            visibility: hidden;
+        }
+        #barraSuperior a[href="../contato.html"]{
+            /* color: #F05D5E; */
+            box-shadow: 0 6pt 0pt -3pt #F05D5E;
+        }
+    </style>
     <section id="hero">
         <div class="wrapper">
             <div id="saudacao">
