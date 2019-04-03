@@ -116,20 +116,6 @@ body {
     margin-bottom: 5pt;
 }
 
-/* Artigos */
-
-/* article+article>h3:first-of-type::before {
-    content: "";
-    width: 128px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    background: url('../assets/borda-quadrada-azul.svg');
-    border-width: 0;
-    height: 4px;
-    display: block;
-} */
-
 .anoProjeto {
     white-space: nowrap;
     font-weight: 400;
@@ -145,113 +131,6 @@ body {
 .anoProjeto::after {
     content: ")";
 }
-
-/* Artigos */
-
-/* .indicadorStatus {
-    font-family: 'Roboto Slab', serif;
-} */
-
-/* Artigos */
-
-/* .indicadorStatus::before {
-    content: "Status: "
-} */
-
-/* Artigos - JogoTrivia*/
-
-/* #jogoTrivia>div.wrapper {
-    display: flex;
-    flex-direction: column;
-} */
-
-/* Artigos - JogoTrivia*/
-
-/* #jogoTrivia>div.wrapper>p:first-of-type {
-    order: 1;
-} */
-
-/* Artigos - JogoTrivia*/
-
-/* #jogoTrivia>div.wrapper>#imgJogoTrivia {
-    order: 2;
-} */
-
-/* Artigos */
-
-/* article section {
-    margin-left: 10pt;
-    margin-right: 10pt;
-} */
-
-/* Artigos */
-
-/* article figure[role=group] {
-    display: flex;
-    margin: 0;
-} */
-
-/* Artigos */
-
-/* article figure[role=group]>figure {
-    margin: 2pt;
-} */
-
-/* Artigos */
-
-/* article figure[role=group]>figure>img {
-    width: 100%;
-} */
-
-/* Artigos - JogoTrivia*/
-
-/* article figure[role=group]>figure::after {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    height: 12px;
-    background: black;
-    border-radius: 100%;
-    filter: blur(5px);
-    content: "";
-    position: relative;
-    bottom: 12px;
-} */
-
-/* Artigos - JogoTrivia*/
-
-/* .xlimg,
-.limg {
-    display: none;
-} */
-
-/* Artigos - euler */
-
-/* ul.linksProblemas {
-    padding-left: 15pt;
-} */
-
-/* Artigos - euler */
-
-/* ul.linksProblemas>li::before {
-    display: none;
-} */
-
-/* Artigos - euler */
-
-/* ul.linksProblemas>li+li::before {
-    content: "|";
-    margin: initial 5pt;
-    display: inline;
-    color: #0d5c63;
-} */
-
-/* Artigos - euler */
-
-/* ul.linksProblemas>li {
-    display: inline-block;
-} */
 
 p {
     font-family: 'Roboto Slab', serif;
@@ -307,21 +186,6 @@ h6 {
     margin-bottom: 2pt !important;
 }
 
-/* Artigos */
-
-/* h4,
-h5 {
-    font-size: 12.5pt;
-    margin-top: 5pt;
-} */
-
-/* Artigos */
-
-/* blockquote {
-    margin-top: 5pt;
-    margin-bottom: 5pt;
-} */
-
 .highlight {
     color: #F05D5E;
     font-weight: 700;
@@ -359,20 +223,6 @@ h5 {
     #subtexto {
         font-size: 18pt;
     }
-    /* Artigos - JogoTrivia*/
-    /* #jogoTrivia>div.wrapper {
-        flex-direction: initial;
-    } */
-    /* Artigos - JogoTrivia*/
-    /* .limg {
-        display: initial;
-    } */
-    /* Artigos - JogoTrivia*/
-    /* #jogoTrivia>div.wrapper>p:first-of-type {
-        order: 1;
-        width: 150%;
-        margin-right: 15px;
-    } */
 }
 
 /* Medium devices (landscape tablets, 895px and up) */
@@ -390,23 +240,6 @@ h5 {
         margin-left: auto;
         margin-right: auto;
     }
-    /* Artigos - JogoTrivia*/
-    /* .xlimg {
-        display: initial;
-    } */
-    /* Artigos - JogoTrivia*/
-    /* #jogoTrivia>div.wrapper {
-        flex-direction: column;
-    } */
-    /* Artigos - JogoTrivia*/
-    /* #jogoTrivia>div.wrapper>#imgJogoTrivia {
-        order: 2;
-    } */
-    /* Artigos - JogoTrivia*/
-    /* #jogoTrivia>div.wrapper>p:first-of-type {
-        width: initial;
-        margin-right: initial;
-    } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
