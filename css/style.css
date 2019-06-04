@@ -11,6 +11,7 @@ Paleta de cores:
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:200, 300,400, 700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 * {
     box-sizing: border-box;
 }
@@ -96,6 +97,11 @@ body {
 
 .tituloSection {
     display: block;
+    text-align: center;
+    font-size: 25pt;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 5pt;
 }
 
 .tituloSection::after {
@@ -107,13 +113,6 @@ body {
     border-width: 0;
     height: 4px;
     display: block;
-}
-
-.tituloSection>h2 {
-    font-size: 25pt;
-    text-align: center;
-    font-weight: 400;
-    margin-bottom: 5pt;
 }
 
 .anoProjeto {
@@ -130,6 +129,22 @@ body {
 
 .anoProjeto::after {
     content: ")";
+}
+
+.fotoPerfil {
+    float: initial;
+    width: 75%;
+    margin: 5pt auto;
+}
+
+.fotoPerfil>img {
+    width: 100%;
+}
+
+.fotoPerfil>figcaption {
+    border-left: 5px solid #F05D5E;
+    margin-left: 3pt;
+    padding-left: 5pt;
 }
 
 p {
@@ -220,8 +235,15 @@ h6 {
         font-size: 30pt;
         line-height: 30pt;
     }
+
     #subtexto {
         font-size: 18pt;
+    }
+
+    .fotoPerfil {
+        float: left;
+        width: 260px;
+        margin: 0 16px 8px 0pt;
     }
 }
 
@@ -232,13 +254,20 @@ h6 {
         font-size: 40pt;
         line-height: 40pt;
     }
+
     #subtexto {
         font-size: 18pt;
     }
+
     .container {
         width: 870px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .fotoPerfil {
+        float: left;
+        width: 40%;
     }
 }
 

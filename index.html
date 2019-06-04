@@ -4,7 +4,7 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135366133-1"></script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -44,51 +44,57 @@
     </section>
     <div class="container">
         <section id="sobre">
-            <div class="tituloSection">
-                <h2>Sobre</h2>
+            <h2 class="tituloSection">Sobre</h2>
+            <div class="conteudoSection">
+                <figure class="fotoPerfil">
+                    <img src="assets/foto-ibm.jpg" alt="Eu e a empresa que eu gosto.">
+                    <figcaption>Eu e a empresa que eu gosto.</figcaption>
+                </figure>
+                <p>
+                    Me interesso por todo tipo de tecnologia desde criança. Aos 11 anos comecei a programar e não parei
+                    desde então. Hoje tenho <span id="idade">19</span> anos, curso <span class="highlight">Sistemas de
+                        Informação</span> na Universidade Federal do Estado do Rio de
+                    Janeiro (UNIRIO), e sou estagiário de desenvolvimento na <span class="highlight">IBM</span>.
+                </p>
+                <p>
+                    A partir de 2014, quando decidi que iria seguir a carreira de desenvolvedor, comecei a estudar Java
+                    e fiz alguns cursos voltados para desenvolvimento web. Desde então, venho explorando novas
+                    linguagens e tecnologias.
+                </p>
+                <p>
+                    Além de estudar, uso meu tempo para criar pequenos projetos e tirar algumas ideias do papel. Ainda
+                    são
+                    poucos, mas eu tenho muito tempo pela frente.
+                </p>
+                <script>
+                    let idade = moment().diff("1999-12-28", "years");
+                    document.querySelector("#idade").innerHTML = idade;
+                </script>
             </div>
-            <p>
-                Me interesso por todo tipo de tecnologia desde criança. Aos 11 anos comecei a programar e não parei
-                desde então. Hoje tenho <span id="idade">19</span> anos e estou cursando <span
-                    class="highlight">Sistemas de
-                    Informação</span> na Universidade Federal do Estado do Rio de Janeiro, a UNIRIO.
-            </p>
-            <p>
-                A partir de 2014, quando decidi que iria seguir a carreira de desenvolvedor, comecei a estudar Java e
-                fiz alguns cursos voltados para desenvolvimento web. Desde então, venho explorando novas linguagens e
-                tecnologias. Entre 2017 e 2018, tive a experiência de trabalhar numa empresa como programador PHP. A
-                aprovação no vestibular e o início do ensino superior, porém, não permitiu que continuasse trabalhando.
-            </p>
-            <p>
-                Além de estudar, uso meu tempo para criar pequenos projetos e tirar algumas ideias do papel. Ainda são
-                poucos, mas eu tenho muito tempo pela frente.
-            </p>
-            <script>
-                let idade = moment().diff("1999-12-28", "years");
-                document.querySelector("#idade").innerHTML = idade;
-            </script>
         </section>
         <section id="projetos">
-            <div class="tituloSection">
-                <h2>Projetos</h2>
+            <h2 class="tituloSection">Projetos</h2>
+            <div class="conteudoSection">
+                <p>
+                    De vez em quando, as minhas ideias acabam virando um repositório no Github. Algumas coisas são
+                    antigas e
+                    não funcionam mais. Tomara que nenhuma delas se volte contra mim como uma série de tweets polêmicos
+                    que
+                    uma celebridade postou a 10 anos atrás.
+                </p>
+                <ul>
+                    <li><a href="projetos/JogoTrivia.html">QuestOne</a><span class="anoProjeto">2018</span> Um jogo de
+                        perguntas e respostas multiplayer online em tempo real.</li>
+                    <li><a href="projetos/ProjectEulerSolutions.html">Project Euler Solutions</a><span
+                            class="anoProjeto">2017–Presente</span> Soluções de problemas do Project Euler.</li>
+                    <li><a href="http://twitternutshell.mateusbandeira.dev" target="blank">Twitter Nutshell</a><span
+                            class="anoProjeto">2017</span> Misture 2 tweets aleatórios em um só.</li>
+                    <!-- <li><a href="#">Hue</a><span class="anoProjeto">2018</span> Protótipo de interface de uma rede social.</li> -->
+                </ul>
+                <p>
+                    O resto, ou não funciona, ou ainda não tem uma página pronta.
+                </p>
             </div>
-            <p>
-                De vez em quando, as minhas ideias acabam virando um repositório no Github. Algumas coisas são antigas e
-                não funcionam mais. Tomara que nenhuma delas se volte contra mim como uma série de tweets polêmicos que
-                uma celebridade postou a 10 anos atrás.
-            </p>
-            <ul>
-                <li><a href="projetos/JogoTrivia.html">QuestOne</a><span class="anoProjeto">2018</span> Um jogo de
-                    perguntas e respostas multiplayer online em tempo real.</li>
-                <li><a href="projetos/ProjectEulerSolutions.html">Project Euler Solutions</a><span
-                        class="anoProjeto">2017–Presente</span> Soluções de problemas do Project Euler.</li>
-                <li><a href="http://twitternutshell.mateusbandeira.dev" target="blank">Twitter Nutshell</a><span
-                        class="anoProjeto">2017</span> Misture 2 tweets aleatórios em um só.</li>
-                <!-- <li><a href="#">Hue</a><span class="anoProjeto">2018</span> Protótipo de interface de uma rede social.</li> -->
-            </ul>
-            <p>
-                O resto, ou não funciona, ou ainda não tem uma página pronta.
-            </p>
         </section>
     </div>
 </body>
