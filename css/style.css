@@ -133,12 +133,14 @@ body {
 
 .fotoPerfil {
     float: initial;
-    width: 75%;
+    width: 100%;
     margin: 5pt auto;
 }
 
 .fotoPerfil>img {
-    width: 100%;
+    width: 100vw;
+    margin-left:-15px;
+    margin-right:-15px;
 }
 
 .fotoPerfil>figcaption {
@@ -244,6 +246,11 @@ h6 {
         float: left;
         width: 260px;
         margin: 0 16px 8px 0pt;
+    }
+    .fotoPerfil>img{
+        width: 100%;
+        margin-left: initial;
+        margin-right: initial;
     }
 }
 
