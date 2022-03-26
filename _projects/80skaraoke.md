@@ -2,6 +2,8 @@
 layout: project_page
 title: 80's Karaoke
 project-year: 2020
+summary: Um Karaokê on-line com a estética dos anos 80.
+cover: /assets/projects/80skaraoke/80s-karaoke-cover.jpg
 ---
 
 O 80's Karaoke é um karaokê com estética anos 80 que roda no navegador. Atualmente, há 5 músicas disponíveis para teste. O projeto está disponível em [80skaraoke.bandeira.dev](https://80skaraoke.bandeira.dev){:target="_blank"}.

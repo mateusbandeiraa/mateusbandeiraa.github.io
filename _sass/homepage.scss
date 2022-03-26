@@ -70,6 +70,10 @@
   }
 }
 
+section {
+  clear: both;
+}
+
 section#about-me {
   h1 {
     font-size: #{$base-font-size * 2};
@@ -95,4 +99,26 @@ section#about-me {
   font-weight: 700;
   font-family: "Exo 2", sans-serif;
   white-space: nowrap;
+}
+
+section#projects {
+  h2 {
+    text-align: center;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: $spacing-unit / 2;
+    li {
+      display: inline-block;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .card {
+    display: block;
+    max-width: $content-width / 2.5;
+  }
 }
