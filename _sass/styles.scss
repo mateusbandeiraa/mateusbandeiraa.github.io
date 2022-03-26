@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Exo+2:200, 300,400, 700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,500");
 
 .highlighted {
   color: #{$brand-color};
@@ -12,16 +12,30 @@ body {
   font-family: "Exo 2", sans-serif;
 }
 
+a {
+  transition: color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 p {
   font-family: "Roboto Slab", serif;
   text-indent: 15pt;
   text-align: justify;
-}
-
-a,
-a:hover {
-  transition: color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  text-decoration: none;
+  a {
+    & {
+      color: $secondary-color;
+      font-weight: #{$base-font-weight + 100};
+    }
+    &:hover {
+      text-decoration: none;
+      color: $brand-color;
+    }
+    &[href] {
+      box-shadow: 0 6pt 0pt -3pt #{$secondary-color};
+      &:hover {
+        box-shadow: 0 6pt 0pt -3pt #{$brand-color};
+      }
+    }
+  }
 }
 
 img {
