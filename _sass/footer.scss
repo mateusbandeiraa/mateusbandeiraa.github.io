@@ -1,0 +1,20 @@
+.site-footer {
+    background-color: $text-color;
+    color: $background-color;
+    .footer-col-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .footer-col{
+            color: lighten($color: $grey-color, $amount: 20%);
+            width: unset;
+        }
+    }
+
+    a{
+        color: $brand-color;
+    }
+
+    a[href]:hover{
+        color: $background-color;
+    }
+}
