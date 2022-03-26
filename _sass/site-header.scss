@@ -5,10 +5,10 @@
       text-decoration: none;
   }
   .site-title {
-    color: $brand-color;
+    color: $background-color;
     font-weight: #{$base-font-weight + 100};
     &:hover{
-        color: darken($color: $brand-color, $amount: 5%);
+        color: $brand-color;
     }
   }
   .site-nav .page-link{
