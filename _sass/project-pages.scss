@@ -3,15 +3,19 @@
   img{
     aspect-ratio: 32/9;
     object-fit: cover;
+    border-radius: $spacing-unit / 2;
   }
   h1 {
     text-align: center;
     margin: $spacing-unit / 2;
-    margin-bottom: 0;
+    margin-bottom: $spacing-unit / 4;
     font-size: $base-font-size * 3;
-    .project-year {
-      font-size: $base-font-size;
-      margin-left: #{$spacing-unit / 4};
-    }
+  }
+  .project-year {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-size: $base-font-size;
+    margin-bottom: $spacing-unit / 2;
   }
 }

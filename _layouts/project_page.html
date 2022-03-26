@@ -4,15 +4,15 @@ layout: default
 
 <article class="post">
   <header class="post-header">
-    {%- if page.cover -%}
-    <img src="{{page.cover | relative-url}}" />
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    
+    {%- if page.project-year -%}
+      <span class="project-year">({{page.project-year}})</span>
     {%- endif -%}
-      <h1 class="post-title">
-        {{ page.title | escape }} {%- if page.project-year -%}<span
-          class="project-year"
-          >({{page.project-year}})</span
-        >{%- endif -%}
-      </h1>
+    
+    {%- if page.cover -%}
+      <img src="{{page.cover | relative-url}}" />
+    {%- endif -%}
   </header>
 
   <div class="post-content">{{ content }}</div>
