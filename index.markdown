@@ -12,7 +12,7 @@ layout: default_home
 
 Tenho 22 anos, curso Sistemas de Informação na Universidade Federal do Estado do Rio de Janeiro (UNIRIO), e atualmente trabalho como desenvolvedor de software na IBM.
 
-Às vezes eu também faço uns projetos pessoais pra web. Meu foco é em back-end, mas a maioria dos meus projetos também inclui o front-end. As tecnologias que mais me sinto confortável são: APIs RESTful com Java e front-end com JavaScript vanilla.
+Meu foco é o desenvolvimento de sistemas back-end, e costumo trabalhar com Java e Spring Boot. Para o front-end, me sinto mais confortável utilizando VueJS. Utilizo essas tecnologias tanto no trabalho profissional quanto nos meus projetos pessoais.
 
 Me manda um e-mail. [mateus@bandeira.dev](mailto:mateus@bandeira.dev).
 
