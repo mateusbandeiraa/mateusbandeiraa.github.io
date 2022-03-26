@@ -6,13 +6,11 @@ summary: Tente acertar todas as 5 perguntas.
 cover: /assets/projects/geenio/geenio-cover.png
 ---
 
-O 80's Karaoke é um karaokê com estética anos 80 que roda no navegador. Atualmente, há 5 músicas disponíveis para teste. O projeto está disponível em [80skaraoke.bandeira.dev](https://80skaraoke.bandeira.dev){:target="_blank"}.
+![](/assets/projects/geenio/geenio.PNG){: .float-left}
 
-![](/assets/projects/80skaraoke/80s-karaoke.png){: .no-shadow}
+O Geenio é um jogo de perguntas e respostas. Inspirado no [Wordle](https://www.nytimes.com/games/wordle/index.html) e no [Termo](https://term.ooo), as perguntas são atualizadas diariamente, e todos os jogadores recebem as mesmas questões durante o dia.
 
-A exibição das letras na tela e o seu preenchimento sincronizado à música foi feito totalmente em JavaScript nativo e CSS. Para o playback de áudio, utilizei o [howler.js](https://howlerjs.com){:target="_blank"}.
+Ao final de cada jogo, você pode compartilhar sua pontuação no twitter.
 
-A versão atual do site é inteiramente estática, hospedada diretamente pelo GitHub Pages.
-
-- [Cante evidências on-line](https://80skaraoke.bandeira.dev/play/?trackid=1){:target="_blank"}
-- [Veja o projeto no GitHub](https://github.com/mateusbandeiraa/80sKaraoke){:target="_blank"}
+- Jogue em [geenio.bandeira.dev](https://geenio.bandeira.dev)
+- Veja a pontuação de outras pessoas no [Twitter](https://twitter.com/search?q=%22joguei%20geenio%22)
