@@ -1,0 +1,9 @@
+h1 {
+  & {
+    text-align: center;
+  }
+  .project-year {
+    font-size: $base-font-size;
+    margin-left: #{$spacing-unit / 4};
+  }
+}

@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,500");
 
-.highlighted {
-  color: #{$brand-color};
-  font-weight: 700;
-  font-family: "Exo 2", sans-serif;
-  white-space: nowrap;
-}
+@import "./site-header.scss";
+@import "./homepage.scss";
+@import "./project-pages.scss";
+@import "./post-content__page-content.scss";
 
 body {
   font-family: "Exo 2", sans-serif;
@@ -14,125 +12,4 @@ body {
 
 a {
   transition: color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-p {
-  font-family: "Roboto Slab", serif;
-  text-indent: 15pt;
-  text-align: justify;
-  a {
-    & {
-      color: $secondary-color;
-      font-weight: #{$base-font-weight + 100};
-    }
-    &:hover {
-      text-decoration: none;
-      color: $brand-color;
-    }
-    &[href] {
-      box-shadow: 0 6pt 0pt -3pt #{$secondary-color};
-      &:hover {
-        box-shadow: 0 6pt 0pt -3pt #{$brand-color};
-      }
-    }
-  }
-}
-
-img {
-  border-radius: #{$spacing-unit/4};
-  box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
-}
-
-/* Homepage styles*/
-#home-hero {
-  & {
-    background-color: #{$text-color};
-    color: #{$background-color};
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20pt;
-  }
-
-  a {
-    &:link,
-    &:visited {
-      color: #{$background-color};
-      box-shadow: 0 6pt 0pt -3pt #{$background-color};
-    }
-    &:hover {
-      color: #{$brand-color};
-      box-shadow: 0 6pt 0pt -3pt #{$brand-color};
-    }
-  }
-
-  #content {
-    & {
-      font-size: 18pt;
-    }
-
-    #greeting {
-      font-size: 30pt;
-      font-weight: 300;
-      margin-bottom: 16px;
-      line-height: 1;
-    }
-
-    #subtext {
-      font-weight: 200;
-      margin-bottom: 16px;
-      line-height: 1.2;
-    }
-
-    ul,
-    li {
-      font-size: 14pt;
-      list-style-type: none;
-    }
-
-    li > i.fab,
-    li > i.fas {
-      margin-right: 5pt;
-    }
-  }
-
-  #arrow-scrolldown {
-    & {
-      color: #{$background-color};
-      position: absolute;
-      bottom: 0;
-      margin: 15px auto;
-      display: inline-block;
-      text-align: center;
-      font-size: 18pt;
-      box-shadow: none !important;
-      cursor: pointer;
-    }
-    &:hover {
-      color: #{$brand-color};
-    }
-  }
-}
-
-section#about-me {
-  h1 {
-    font-size: #{$base-font-size * 2};
-    text-align: center;
-  }
-  img {
-    & {
-      display: inherit;
-      float: left;
-      max-width: 40%;
-      margin-right: $spacing-unit/2;
-    }
-    @include media-query($on-palm) {
-      float: initial;
-      max-width: 100%;
-      margin-right: inherit;
-    }
-  }
 }
