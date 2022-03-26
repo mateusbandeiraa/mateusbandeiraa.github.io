@@ -8,7 +8,7 @@ layout: default_home
 <section id="about-me" markdown="1">
 # Sobre mim
 
-![Foto minha em frente ao prédio da IBM no Rio de Janeiro. Ao meu lado está uma placa quadrada, com o logotipo da IBM brando, num fundo preto.](/assets/pages/home/profile-picture.jpg)
+![Foto minha em frente ao prédio da IBM no Rio de Janeiro. Ao meu lado está uma placa quadrada, com o logotipo da IBM brando, num fundo preto.](/assets/pages/home/profile-picture.jpg){: .float-left}
 
 Tenho 22 anos, curso Sistemas de Informação na Universidade Federal do Estado do Rio de Janeiro (UNIRIO), e atualmente trabalho como desenvolvedor de software na IBM.
 

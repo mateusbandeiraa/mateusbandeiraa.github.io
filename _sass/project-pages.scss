@@ -1,9 +1,17 @@
-h1 {
-  & {
-    text-align: center;
+.post-header {
+  position: relative;
+  img{
+    aspect-ratio: 32/9;
+    object-fit: cover;
   }
-  .project-year {
-    font-size: $base-font-size;
-    margin-left: #{$spacing-unit / 4};
+  h1 {
+    text-align: center;
+    margin: $spacing-unit / 2;
+    margin-bottom: 0;
+    font-size: $base-font-size * 3;
+    .project-year {
+      font-size: $base-font-size;
+      margin-left: #{$spacing-unit / 4};
+    }
   }
 }

@@ -8,6 +8,30 @@
     img {
       // Workaround: avoids text-indent messing with the alignment
       float: left;
+      border-radius: #{$spacing-unit/4};
+      margin-bottom: 15px;
+      &:not(.no-shadow) {
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  img {
+    &.float-left {
+      display: inherit;
+      float: left;
+      max-width: 40%;
+      margin-right: $spacing-unit/2;
+
+      &.half-width {
+        max-width: 50%;
+      }
+
+      @include media-query($on-palm) {
+        float: initial;
+        max-width: 100% !important;
+        margin-right: inherit;
+      }
     }
   }
 
@@ -40,16 +64,13 @@
   }
 }
 
-img,
 .card {
   border-radius: #{$spacing-unit/4};
+  overflow: hidden;
   margin-bottom: 15px;
   &:not(.no-shadow) {
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
   }
-}
-
-.card {
   .card-header {
     position: relative;
     & {
