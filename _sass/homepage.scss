@@ -72,10 +72,7 @@
 
 section {
   clear: both;
-}
-
-section#about-me {
-  h1 {
+  h1, h2 {
     font-size: #{$base-font-size * 2};
     text-align: center;
   }
@@ -89,9 +86,6 @@ section#about-me {
 }
 
 section#projects {
-  h2 {
-    text-align: center;
-  }
   ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -107,5 +101,12 @@ section#projects {
   .card {
     display: block;
     max-width: $content-width / 2.5;
+  }
+}
+
+section#blog-posts {
+  ul
+  a {
+    box-shadow: none;
   }
 }
