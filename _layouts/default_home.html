@@ -37,7 +37,8 @@
       <section id="projects">
         <h2 class="post-list-heading">{{ page.list_title | default: "Projetos" }}</h2>
         <ul class="post-list">
-          {%- for project in site.projects -%}
+          {% assign projects = site.projects | sort: 'project-year' | reverse %}
+          {%- for project in projects -%}
             <li>
               <div class="card">
                 <div class="card-header">

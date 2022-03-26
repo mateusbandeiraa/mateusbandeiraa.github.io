@@ -36,6 +36,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
+    sort_by: project-year
 
 # Exclude from processing.
 # The following items will not be processed, by default.
