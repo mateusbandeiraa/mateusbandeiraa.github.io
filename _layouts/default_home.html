@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+
+<body>
+  <script src="assets/smoothscroll.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        document.getElementById("arrow-scrolldown").onclick = function () {
+            document.getElementsByClassName("page-content")[0].scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+  <section id="home-hero">
+    <div id="content">
+      <div id="greeting">Olá, meu nome é <b class="highlighted">Mateus Bandeira</b>.</div>
+      <div id="subtext">
+        <div>
+          Eu faço programas de computador. Alguns deles até funcionam.
+        </div>
+      </div>
+      <ul>
+        <li><i class="fab fa-github"></i><a href="https://github.com/mateusbandeiraa">Github</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:mateus@bandeira.dev">mateus@bandeira.dev</a></li>
+      </ul>
+    </div>
+    <a id="arrow-scrolldown"><i class="fas fa-lg fa-chevron-down"></i></a>
+  </section>
+
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>
