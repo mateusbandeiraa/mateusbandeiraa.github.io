@@ -1,0 +1,124 @@
+#hero {
+  & {
+    background-color: #{$text-color};
+    color: #{$background-color};
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20pt;
+  }
+
+  a {
+    text-decoration: none;
+    &:link,
+    &:visited {
+      color: #{$background-color};
+      box-shadow: 0 6pt 0pt -3pt #{$background-color};
+    }
+    &:hover {
+      color: #{$brand-color};
+      box-shadow: 0 6pt 0pt -3pt #{$brand-color};
+    }
+  }
+
+  #content {
+    & {
+      @include relative-font-size(1.5);
+    }
+
+    #greeting {
+      @include relative-font-size(3);
+      font-weight: 300;
+      margin-bottom: 16px;
+      line-height: 1;
+      @include media-query($on-palm) {
+        @include relative-font-size(2);
+      }
+    }
+
+    #subtext {
+      font-weight: 200;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    ul,
+    li {
+      @include relative-font-size(1.25);
+      line-height: 1.75;
+      list-style-type: none;
+    }
+
+    li > i.fab,
+    li > i.fas {
+      margin-right: 5pt;
+    }
+  }
+
+  #arrow-scrolldown {
+    & {
+      color: #{$background-color};
+      position: absolute;
+      bottom: 0;
+      margin: 15px auto;
+      display: inline-block;
+      text-align: center;
+      @include relative-font-size(1.75);
+      box-shadow: none !important;
+      cursor: pointer;
+    }
+    &:hover {
+      color: #{$brand-color};
+    }
+  }
+}
+
+section {
+  clear: both;
+  h1, h2 {
+    @include relative-font-size(2);
+    text-align: center;
+  }
+}
+
+.highlighted {
+  color: #{$brand-color};
+  font-weight: 700;
+  font-family: "Exo 2", sans-serif;
+  white-space: nowrap;
+}
+
+section#projects {
+  .post-list {
+    display: grid;
+    column-gap: $spacing-unit / 2;
+    grid-template-columns: repeat(auto-fill, ($content-width - ($spacing-unit * 4)) / 3);
+    justify-content: center;
+    li {
+      display: inline-block;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .card {
+    height: calc(100% - 10px); // -10px to account for the margin-bottom
+    .card-header img {
+      // Aspect-ratio doesn't work for all browsers so I'm doing this ugly thing
+      height: #{($content-width - ($spacing-unit * 4)) / 3 / (16 / 10)};
+    }
+    .card-header a {
+      box-shadow: none;
+    }
+  }
+}
+
+section#blog-posts {
+  ul
+  a {
+    box-shadow: none;
+  }
+}

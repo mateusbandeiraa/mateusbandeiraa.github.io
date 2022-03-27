@@ -1,0 +1,21 @@
+.post-header {
+  position: relative;
+  img{
+    aspect-ratio: 32/9;
+    object-fit: cover;
+    border-radius: $spacing-unit / 2;
+  }
+  h1 {
+    text-align: center;
+    margin: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 4;
+    @include relative-font-size(3);
+  }
+  .project-year {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    @include relative-font-size(1);
+    margin-bottom: $spacing-unit / 2;
+  }
+}

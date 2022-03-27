@@ -1,0 +1,124 @@
+.post-content,
+.page-content {
+  p {
+    font-family: "Roboto Slab", serif;
+    text-indent: $spacing-unit;
+    text-align: justify;
+
+    img {
+      // Workaround: avoids text-indent messing with the alignment
+      float: left;
+      border-radius: #{$spacing-unit/4};
+      margin-bottom: 15px;
+      &:not(.no-shadow) {
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  img {
+    &.float-left {
+      display: inherit;
+      float: left;
+      max-width: 40%;
+      margin-right: $spacing-unit/2;
+
+      &.half-width {
+        max-width: 50%;
+      }
+
+      @include media-query($on-palm) {
+        float: initial;
+        max-width: 100% !important;
+        margin-right: inherit;
+      }
+    }
+  }
+}
+
+.post-content {
+  a {
+    & {
+      color: $secondary-color;
+      font-weight: #{$base-font-weight + 100};
+    }
+    &:hover {
+      text-decoration: none;
+      color: $brand-color;
+    }
+    &[href] {
+      box-shadow: 0 6pt 0pt -3pt #{$secondary-color};
+      &:hover {
+        box-shadow: 0 6pt 0pt -3pt #{$brand-color};
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    line-height: 2;
+    li::before {
+      content: "\25A0";
+      color: $brand-color;
+      margin-right: $spacing-unit / 4;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: $spacing-unit / 4;
+  overflow: hidden;
+  &:not(.no-shadow) {
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card-header {
+    a {
+      position: relative;
+      display: block;
+      color: $background-color;
+
+      &:hover {
+        color: $brand-color;
+      }
+
+      img {
+        border-end-end-radius: 0;
+        border-end-start-radius: 0;
+        box-shadow: none;
+        margin-bottom: initial;
+        aspect-ratio: 16/10;
+        object-fit: cover;
+      }
+      .card-title {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(
+          0,
+          rgba(0, 0, 0, 0.3) 75%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        h3 {
+          margin: $spacing-unit / 2;
+          margin-bottom: 0;
+          @include relative-font-size(2);
+        }
+      }
+    }
+  }
+  .card-body {
+    display: block;
+    padding: $spacing-unit / 3;
+    // padding-bottom: $spacing-unit * 1.1;
+    margin-bottom: $spacing-unit * 1.5;
+    line-height: 1.5;
+    .card-cta {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-bottom: $spacing-unit/2;
+      margin-right: $spacing-unit/2;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,500");
+
+@import "./site-header.scss";
+@import "./homepage.scss";
+@import "./project-pages.scss";
+@import "./post-content__page-content.scss";
+@import "./footer.scss";
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+a {
+  transition: color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

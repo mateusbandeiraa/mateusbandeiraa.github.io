@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+
+<body>
+  <script src="assets/smoothscroll.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        document.getElementById("arrow-scrolldown").onclick = function () {
+            document.getElementsByClassName("page-content")[0].scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+  <section id="hero">
+    <div id="content">
+      <div id="greeting">Olá, meu nome é <b class="highlighted">Mateus Bandeira</b>.</div>
+      <div id="subtext">
+        <div>
+          Eu faço programas de computador. Alguns deles até funcionam.
+        </div>
+      </div>
+      <ul>
+        <li><i class="fab fa-github"></i><a href="https://github.com/mateusbandeiraa">Github</a></li>
+        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/mateus-bandeira/">LinkedIn</a></li>
+        <li><i class="fas fa-envelope"></i><a href="mailto:mateus@bandeira.dev">mateus@bandeira.dev</a></li>
+      </ul>
+    </div>
+    <a id="arrow-scrolldown"><i class="fas fa-lg fa-chevron-down"></i></a>
+  </section>
+
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <div class="post-content">
+        {{ content }}
+        
+        {%- if site.projects.size > 0 -%}
+        <section id="projects">
+          <h2 class="post-list-heading">{{ page.list_title | default: "Projetos" }}</h2>
+          <ul class="post-list">
+            {% assign projects = site.projects | sort: 'project-year' | reverse %}
+            {%- for project in projects -%}
+            <li>
+              <div class="card">
+                <div class="card-header">
+                  <a href="{{ project.url | relative_url }}">
+                    <img src="{{ project.cover }}">
+                    <div class="card-title">
+                      <h3>
+                        {{ project.title | escape }}
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  {{ project.summary }}
+                  
+                  <div class="card-cta">
+                    <a href="{{ project.url | relative_url }}">Veja mais</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </section>
+        {%- endif -%}
+      </div>
+
+      {%- if site.posts.size > 0 -%}
+      <section id="blog-posts">
+      <h2 class="post-list-heading">{{ page.list_title | default: "Blog" }}</h2>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+    </section>
+    {%- endif -%}
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+
+</html>
