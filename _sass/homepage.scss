@@ -105,7 +105,14 @@ section#projects {
   }
 
   .card {
-    display: block;
+    height: calc(100% - 10px); // -10px to account for the margin-bottom
+    .card-header img {
+      // Aspect-ratio doesn't work for all browsers so I'm doing this ugly thing
+      height: #{($content-width - ($spacing-unit * 4)) / 3 / (16 / 10)};
+    }
+    .card-header a {
+      box-shadow: none;
+    }
   }
 }
 
