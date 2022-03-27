@@ -2,20 +2,24 @@
   background-color: $text-color;
   border-top: 5px solid $brand-color;
   a:hover {
-      text-decoration: none;
+    text-decoration: none;
   }
   .site-title {
     color: $background-color;
     font-weight: #{$base-font-weight + 100};
-    &:hover{
-        color: $brand-color;
+    &:hover {
+      color: $brand-color;
     }
   }
-  .site-nav .page-link{
-      color: $background-color;
+  .site-nav .page-link {
+    color: $background-color;
 
-      &:hover{
-        color: $brand-color;
-      }
+    @include media-query($on-palm) {
+      color: $text-color;
+    }
+
+    &:hover {
+      color: $brand-color;
+    }
   }
 }
